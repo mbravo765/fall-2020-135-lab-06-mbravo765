@@ -1,10 +1,10 @@
 * Fall 2020 - Lab 06
 
-* Last name:
+* Last name: Bravo
 
-* First name:
+* First name: Michelle
 
-* GitHub username:
+* GitHub username: mbravo765
 
 * Notes:
 
