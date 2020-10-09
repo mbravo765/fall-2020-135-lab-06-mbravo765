@@ -24,11 +24,11 @@ char shiftChar(char c, int rshift)
 	{
 		if(isupper(c))//checks if character is uppercase letter
 		{
-			c= ((int)c + rshift -65) %26 + 65;
+			return (((int)c + rshift -65) %26 + 65);
 		}
 		else if(islower(c))//checks if character is lower case letter
 		{
-			c= ((int)c + rshift -97) %26 + 97;
+			return (((int)c + rshift -97) %26 + 97);
 		}
 	}
 		return c;
