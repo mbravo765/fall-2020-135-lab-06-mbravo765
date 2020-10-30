@@ -60,7 +60,8 @@ TEST_CASE("Check decryptVigenere (string ciphertext, string keyword)")
 
 TEST_CASE("Checking Decode Caesar function")
 {
-	//CHECK(decoder("vszzc") == "hello");
+	CHECK(decoder(encryptCaesar("Taylor Swift",13)) == "Gnlybe Fjvsg");
 	CHECK(decoder("no change") == "no change");
+	CHECK(decoder(encryptCaesar("Hello What's up", 8)) == "Pmttw Epib'a cx");
 
 }
