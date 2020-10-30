@@ -14,6 +14,7 @@ test cases for task b, c, and d.
 #include "caesar.h"
 #include "vigenere.h"
 #include "decrypt.h"
+#include "decode.h"
 
 // add your tests here
 //Task B
@@ -55,4 +56,11 @@ TEST_CASE("Check decryptVigenere (string ciphertext, string keyword)")
 {
 	CHECK(decryptVigenere("Jevpq, Wyvnd!", "cake")=="Hello, World!");
 	CHECK(decryptVigenere("Jevpq", "cake") == "Hello");
+}
+
+TEST_CASE("Checking Decode Caesar function")
+{
+	//CHECK(decoder("vszzc") == "hello");
+	CHECK(decoder("no change") == "no change");
+
 }
