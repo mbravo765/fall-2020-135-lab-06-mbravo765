@@ -14,6 +14,7 @@ string
 #include "decrypt.h"
 #include "funcs.h"
 
+
 std::string decoder(std::string encryptedSt)
 {
 	using std::string;
