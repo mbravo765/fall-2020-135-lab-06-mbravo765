@@ -9,6 +9,10 @@ Purpose: call void test_ascii() from main
 
 #include <iostream>
 #include "funcs.h"
+#include "caesar.h"
+#include "vigenere.h"
+#include "decrypt.h"
+#include "decode.h"
 int main()
 {
 	using std::string;
@@ -24,7 +28,10 @@ int main()
 
 	test_ascii("Hello world");
 	cout << "\n";
-
+	cout << "decode encryptCaesar(Taylor Swift, 13)" <<"\n" << decoder(encryptCaesar("Taylor Swift", 13));
+	cout << "\n";
+	cout << "decode encryptCaesar(Hello now, What's up, 8)" << "\n" << decoder(encryptCaesar("Hello What's up", 8));
+	cout << "\n";
 
   return 0;
 }
